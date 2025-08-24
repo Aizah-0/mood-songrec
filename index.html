@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Song Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body> 
+    <div id="Background">
+       <p>Background: <a id="linkb" href="https://www.pexels.com/@rpnickson" target="_blank">By</a></p>
+       </div>
+        
+
+<div id="behind">
+    <h1>How's the mood today?</h1>
+
+<div id="emotions">
+  <button onclick="happy()" title="Happy">
+    <img class="emotion" id="Happy" src="Emojis/Happyline.png">
+  </button>
+
+  <button onclick="excited()" title="Excited">
+    <img class="emotion" id="Excited" src="Emojis/excited.png">
+  </button>
+
+    <button onclick="inlove()" title="In love">
+    <img class="emotion" id="inLove" src="Emojis/Inloveline.png">
+  </button>
+
+  <button onclick="calm()" title="Calm">
+    <img class="emotion" id="Calm" src="Emojis/Calmline.png">
+  </button>
+
+     <button onclick="sad()"title="Sad">
+    <img class="emotion" id="Sad" src="Emojis/Sadline.png">
+  </button>
+
+  <button onclick="angry()" title="Angry">
+    <img class="emotion" id="Angry" src="Emojis/Angryline.png">
+  </button>
+</div>
+
+  <div id="song_embed">
+    <iframe class="embed" src="https://open.spotify.com/embed/track/0IKb20Ej7bMOJXD8BMqi50?si=edef5463f97a47b4"
+    allowfullscreen
+    loading="lazy"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+    ></iframe>
+  </div>
+  <p id="details">Hover emojis for details</p>
+
+</div>
+
+<div id="section" >
+<button class="creator" title="Recommendations" onclick="togglefeedback()">
+  <img id="messagelogo" src="Emojis/Messagebox.png">
+</button>
+</div>
+
+
+<div id="feedbackform" >
+  <h2>Say hi or send recommendations!</h2>
+  <form action="https://formspree.io/f/mjkebydd" method="post">
+    <label for="email"> Your email: </label>
+      <input type="email" name="email">
+ 
+    <label for="message">Your message:</label>
+      <textarea name="message"></textarea>
+ 
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
