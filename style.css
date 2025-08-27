@@ -1,147 +1,143 @@
- body {
-     background-image: url("Backgrounds/Night.jpg");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     min-height: 100vh;
- }
+body {
+    background-image: url("Backgrounds/Night.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    overflow-x: hidden;
+}
 
+#behind {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    padding: 5vw;
+    max-width: 90%;
+}
 
+h1 {
+    text-align: center;
+    font-size: clamp(20px, 5vw, 40px);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
- #behind {
-     background-color: rgba(255, 255, 255, 0.08);
-     border-radius: 20px;
-     backdrop-filter: blur(5px);
-     padding: 50px;
+button {
+    background: none;
+    border: none;
+}
 
+.emotion {
+    width: clamp(30px, 8vw, 50px);
+    height: clamp(30px, 8vw, 50px);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
 
- }
+.embed {
+    border: none;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    align-self: center;
+    justify-content: center;
+}
 
- h1 {
-     text-align: center;
-     align-self: center;
-     justify-content: center;
-     font-size: 40px;
-     color: white;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
- }
+#inLove {
+    width: clamp(40px, 10vw, 60px);
+    height: clamp(40px, 10vw, 60px);
+}
 
- button {
-     background: none;
-     border: none;
- }
+p {
+    color: wheat;
+    font-size: clamp(12px, 2.5vw, 18px);
+}
 
+#linkb {
+    color: wheat;
+    text-decoration: none;
+}
 
- .emotion {
-     width: 50px;
-     height: 50px;
-     display: flex;
-     justify-content: center;
-     cursor: pointer;
- }
+#linkb:hover {
+    color: rgb(29, 44, 255);
+}
 
- .embed {
-     border: none;
-     margin-top: 40px;
-     margin-bottom: 20px;
-     height: 400px;
-     width: 400px;
-     align-self: center;
-     justify-content: center;
- }
+#Background {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+}
 
- #inLove {
-     width: 60px;
-     height: 60px;
- }
+#details {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: clamp(12px, 2.5vw, 18px);
+}
 
- p {
-     color: wheat;
- }
+#section {
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+    display: flex;
+    gap: 1vw;
+}
 
- #linkb {
-     color: wheat;
-     text-decoration: none;
- }
+#messagelogo {
+    width: clamp(25px, 8vw, 40px);
+    height: clamp(25px, 8vw, 40px);
+    object-fit: contain;
+}
 
- #linkb:hover {
-     color: rgb(29, 44, 255);
- }
+.creator {
+    cursor: pointer;
+}
 
- #Background {
-     position: absolute;
-     top: 20px;
-     left: 20px
- }
+#feedbackform {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 2vw;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5vw;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    color: white;
+    z-index: 9999;
+}
 
- #details {
-     margin-top: 0;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     color: white;
- }
+#feedbackform label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: white;
+    font-size: clamp(12px, 2.5vw, 16px);
+}
 
- #section {
-     position: absolute;
-     bottom: 20px;
-     left: 20px;
-     display: flex;
-     gap: 4px;
- }
+#feedbackform input,
+#feedbackform textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: clamp(12px, 2.5vw, 16px);
+}
 
- #messagelogo {
-     width: 40px;
-     height: 40px;
-     object-fit: contain;
- }
-
- .creator {
-     cursor: pointer;
- }
-
- #feedbackform {
-     display: none;
-     position: absolute;
-     bottom: 70px;
-     left: 20px;
-     max-width: 300px;
-     background: rgba(0, 0, 0, 0.3);
-     padding: 20px;
-     border-radius: 10px;
-     backdrop-filter: blur(6px);
-     color: white;
-     z-index: 9999;
-     padding-left: 50px;
-     padding-right: 50px;
- }
-
- #feedbackform label {
-     display: block;
-     margin-bottom: 6px;
-     font-weight: bold;
-     color: white;
- }
-
- #feedbackform input,
- #feedbackform textarea {
-     display: block;
-     width: 100%;
-     margin-bottom: 15px;
-     padding: 8px;
-     border: 1px solid #ccc;
-     border-radius: 5px;
-     font-size: 14px;
- }
-
- #feedbackform button {
-     background-color: white;
-     border: none;
-     padding: 6px 12px;
-     border-radius: 5px;
-     cursor: pointer;
- }
+#feedbackform button {
+    background-color: white;
+    border: none;
+    padding: clamp(4px, 1vw, 8px) clamp(8px, 2vw, 16px);
+    border-radius: 5px;
+    cursor: pointer;
+}
